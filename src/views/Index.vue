@@ -41,6 +41,8 @@
           </div> 
         </div>
       </div> 
+    <!-- <iview-col></iview-col> -->
+      
       <Footer></Footer>
   </div>
 </template>
@@ -48,7 +50,8 @@
     import Nav from "../components/Header";
     import Footer from "../components/Footer";
     import Swiper from "../../dist/static/js/swiper.min.js";
-
+    // import IviewIcon from 'iview/src/components/icon/icon';
+    // import { Button } from 'iview';
     export default {
         name: "Index",
         // data(){
@@ -56,7 +59,9 @@
         // },
         components: {
             Nav,
-            Footer
+            Footer,
+             IviewIcon
+
         },
         mounted() {
             var mySwiper = new Swiper(".swiper-container", {
@@ -85,6 +90,7 @@
 </script>
 <style lang="scss">
     @import "../../dist/static/css/swiper.min.css";
+   
     $bgcolor: rgb(255, 255, 255);
     $width: 100%;
     $height: 100%;
@@ -93,6 +99,7 @@
         width: $width;
         height: $height;
         display: grid;
+        display: -ms-grid;
         grid-template-rows: 67px auto 130px;
     }
 
@@ -103,6 +110,7 @@
            width: 100%;
            margin: 32px auto 62px;
            display: grid;
+           display: -ms-grid;
            grid-template-columns: 770px auto 400px;
            background: blue;
            font-size: 0;
@@ -115,6 +123,7 @@
            .code {
                width: 400px;
                display: grid;
+               display: -ms-grid;
                grid-template-rows: 220px auto 168px;
                .itemUp {
                    background: green;

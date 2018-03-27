@@ -1,19 +1,15 @@
 <template>
   <div class="navOut">
       <div class="navIn">
+          <!-- logo部分以及导航菜单 -->
         <div class="itemLogo">
             <div>
                 <img src="../../dist/static/img/nav/logo.png" alt="">
             </div>
-            <div>
-                首页
-            </div>
-            <div>
-                发现
-            </div>
-            <div>
-                手艺人
-            </div>
+                <router-link tag='div' to="/">首页</router-link>
+                <router-link tag='div' to="/discover">发现</router-link>
+                <router-link tag='div' to="/artists">手艺人</router-link>
+                
         </div>
         <div class="itemSearch">
 
@@ -61,6 +57,12 @@ $colorFont: rgb(255, 255, 255);
       color: $colorFont;
       img {
         vertical-align: middle;
+      }
+      div{
+          cursor: default;
+          &:hover{
+              color: red;
+          }
       }
     }
     .itemInfor {
