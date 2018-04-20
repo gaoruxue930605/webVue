@@ -8,8 +8,7 @@
             </div>
                 <router-link tag='div' to="/">首页</router-link>
                 <router-link tag='div' to="/discover">发现</router-link>
-                <router-link tag='div' to="/artists">手艺人</router-link>
-                
+                <router-link tag='div' to="/artists">手艺人</router-link>     
         </div>
         <div class="itemSearch">
 

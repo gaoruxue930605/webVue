@@ -1,15 +1,10 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-   <Button></Button>
     <router-view/>
   </div>
 </template>
 
 <script>
-import { Button, Table } from 'iview';
-Vue.component('Button', Button);
-Vue.component('Table', Table);
 export default {
   name: "App",
 };
