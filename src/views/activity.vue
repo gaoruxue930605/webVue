@@ -1,21 +1,17 @@
 <template>
 <div>
-  <Nav></Nav>
-  <div>影视人</div>
+    <Nav></Nav>
+    <div> 活动</div>
 </div>
+  
 </template>
 <script>
 import Nav from "../components/Nav";
 export default {
- name:'artists',
- components:{
+    name:'activity',
+    components:{
         Nav
     }
 }
 </script>
-<style lang="scss" scoped>
-
-</style>
-
-
 
