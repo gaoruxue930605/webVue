@@ -50,10 +50,8 @@
             <ListBox v-for="i in 12" :key="i.id"></ListBox>
         </div>
         <button disabled="disabled">查看更多</button>
-      
       </div>  
       <Footer></Footer>
-       
   </div>
 </template>
 <script type="text/javascript">
@@ -69,13 +67,12 @@ export default {
     Footer,
     ListBox,
     Input
-
   },
   mounted() {
     var mySwiper = new Swiper(".swiper-container", {
       autoplay: true, //可选选项，自动滑动
       loop: true,
-      effect: "cube",
+      effect: "slider",
       cubeEffect: {
         slideShadows: false,
         shadow: false,

@@ -4,16 +4,21 @@
         <MenuItem name="1" class="logo">
               <img src="../../dist/static/img/nav/logo.png" alt="">
         </MenuItem>
-        <MenuItem name="1"><router-link tag='div' to="/">首页</router-link></MenuItem>
+        <MenuItem name="1">
+        <router-link tag='div' to="/">
+         <!-- <slot name="index"></slot> -->
+         首页
+        </router-link>
+        </MenuItem>
         <Submenu name="2" >
           <template slot="title">
             发现
           </template>
-          <MenuGroup title="使用">
+          <!-- <MenuGroup > -->
             <MenuItem name="3-1"><router-link tag='div' to="/works">作品</router-link></MenuItem>
             <MenuItem name="3-2"><router-link tag='div' to="/article">文章</router-link> </MenuItem>
             <MenuItem name="3-3"><router-link tag='div' to="/artists">影视人</router-link></MenuItem>
-        </MenuGroup>
+        <!-- </MenuGroup> -->
         </Submenu>
         <MenuItem name="3"> <router-link tag='div' to="/activity">活动</router-link> </MenuItem>
         <MenuItem name="4"><router-link tag='div' to="/announce">影视圈招聘</router-link>  </MenuItem>
@@ -28,7 +33,7 @@
 <script>
 import { Menu, Icon, MenuGroup, MenuItem, Submenu } from "iview";
 export default {
-  name: "Navr",
+  name: "Nav",
   components: {
     Menu,
     Icon,
@@ -38,15 +43,16 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .menuOut {
   width: 100%;
-  background: #2a263e !important;
+ background: #2a263e;
   .clear:after {
     content: " ";
     clear: both;
     visibility: hidden;
     display: block;
+    
   }
   .border {
     border-right: 1px solid #ffffff;
@@ -58,7 +64,7 @@ export default {
     text-align: center;
     width: 1200px;
     margin: 0 auto;
-    background: #2a263e !important;
+    background: #2a263e;
     .ivu-menu-item,
     .ivu-menu-submenu {
       font-size: 16px !important;
