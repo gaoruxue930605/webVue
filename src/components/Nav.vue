@@ -15,9 +15,9 @@
             发现
           </template>
           <!-- <MenuGroup > -->
-            <MenuItem name="3-1"><router-link tag='div' to="/works">作品</router-link></MenuItem>
-            <MenuItem name="3-2"><router-link tag='div' to="/article">文章</router-link> </MenuItem>
-            <MenuItem name="3-3"><router-link tag='div' to="/artists">影视人</router-link></MenuItem>
+            <MenuItem name="3-1"><router-link tag='div' to="/discover/works">作品</router-link></MenuItem>
+            <MenuItem name="3-2"><router-link tag='div' to="/discover/article">文章</router-link> </MenuItem>
+            <MenuItem name="3-3"><router-link tag='div' to="/discover/artists">影视人</router-link></MenuItem>
         <!-- </MenuGroup> -->
         </Submenu>
         <MenuItem name="3"> <router-link tag='div' to="/activity">活动</router-link> </MenuItem>

@@ -7,8 +7,9 @@ import Activity from "../views/activity.vue"
 import About from "../views/about.vue"
 import Announce from "../views/announce.vue"
 import Works from "../views/works.vue"
-import Article from "../views/article.vue"
+import Art from "../views/article.vue"
 import NewIndex from "../views/newIndex.vue";
+
 
 Vue.use(Router)
 
@@ -16,22 +17,28 @@ export default new Router({
     routes: [{
             path: "/",
             name: "newIndex",
-            component: NewIndex
+            component: NewIndex,
         },
         {
             path: "/discover",
             name: "Discover",
-            component: Discover
-        },
-        {
-            path: "/artists",
-            name: "Artists",
-            component: Artists
-        },
-        {
-            path: "/activity",
-            name: "activity",
-            component: Activity
+            component: Discover,
+            children: [{
+                    path: "/discover/artists",
+                    name: "artists",
+                    component: Artists
+                },
+                {
+                    path: "/discover/works",
+                    name: "works",
+                    component: Works
+                },
+                {
+                    path: "/discover/art",
+                    name: "art",
+                    component: Art
+                }
+            ]
         },
         {
             path: "/about",
@@ -44,14 +51,9 @@ export default new Router({
             component: Announce
         },
         {
-            path: "/works",
-            name: "works",
-            component: Works
-        },
-        {
-            path: "/article",
-            name: "article",
-            component: Article
+            path: "/activity",
+            name: "activity",
+            component: Activity
         }
     ]
 });

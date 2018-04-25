@@ -1,6 +1,5 @@
 <template>
   <div>
-      <Nav></Nav>
       <div>作品</div>
   </div>
 </template>

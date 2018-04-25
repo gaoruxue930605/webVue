@@ -1,6 +1,5 @@
 <template>
 <div>
-  <Nav></Nav>
   <div>影视人</div>
 </div>
 </template>
@@ -8,9 +7,6 @@
 import Nav from "../components/Nav";
 export default {
  name:'artists',
- components:{
-        Nav
-    }
 }
 </script>
 <style lang="scss" scoped>

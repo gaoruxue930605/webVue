@@ -1,6 +1,5 @@
 <template>
   <div class="box">
-      <Nav></Nav>
       <div class="content">
         <div class="itemSwiper">
           <!-- 轮播 -->
@@ -59,9 +58,15 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import ListBox from "../components/ImgList";
 import Swiper from "../../dist/static/js/swiper.min.js";
+import scrollReveal from  'scrollreveal';
 import {Input} from 'iview';
 export default {
   name: "Index",
+  data () {
+    return {
+        scrollReveal:scrollReveal(),
+    }
+},
   components: {
     Nav,
     Footer,
